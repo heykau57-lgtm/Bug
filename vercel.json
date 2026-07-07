@@ -2,18 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "!─☇𝐒iX/*.html",
+      "src": "!─☇𝐒iX/Login.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/",
-      "dest": "/index.html"
+      "dest": "/!─☇𝐒iX/Login.html"
     },
     {
       "src": "/login",
