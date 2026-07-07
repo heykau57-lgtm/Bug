@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.js",
+      "src": "*.html",
       "use": "@vercel/static"
     },
     {
@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/index.js"
+      "dest": "/index.html"
     },
     {
       "src": "/login",
