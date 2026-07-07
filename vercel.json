@@ -2,18 +2,30 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
+      "src": "index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "!─☇𝐒𝐢X/*.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/",
-      "dest": "/index.html"
+      "dest": "/index.js"
+    },
+    {
+      "src": "/login",
+      "dest": "/!─☇𝐒𝐢X/Login.html"
+    },
+    {
+      "src": "/!─☇𝐒𝐢X/(.*)",
+      "dest": "/!─☇𝐒𝐢X/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/index.js"
     }
   ]
 }
